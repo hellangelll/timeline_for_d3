@@ -1,0 +1,135 @@
+button {
+	font: 14px Helvetica Neue;
+	background-color: #222;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.25), rgba(255,255,255,.11));
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,.25)),color-stop(1, rgba(255,255,255,.11)));
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.11));
+	color: #fff;
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 -1px 1px #222;
+	padding: 6px 10px 6px 10px;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #222;
+	margin: 0;
+	-moz-box-shadow: 0 1px 3px #999;
+	-webkit-box-shadow: 0 1px 3px #999;
+}
+
+button.first {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+button.last {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+button.active {
+	background-color: rgb(65,102,133);
+}
+
+button:hover {
+	background-color: steelblue;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+body {
+	background-color: #ccc;
+}
+
+.p_parentDiv {
+	/*background-image : url("../images/timeline_scrool.png");*/
+	background: -moz-linear-gradient(top, #595f60 0%, #383d3c 50%, #0a0e0a 51%, #0a0809 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #595f60), color-stop(50%, #383d3c), color-stop(51%, #0a0e0a), color-stop(100%, #0a0809));
+	background: -webkit-linear-gradient(top, #595f60 0%, #383d3c 50%, #0a0e0a 51%, #0a0809 100%);
+	background: -o-linear-gradient(top, #595f60 0%, #383d3c 50%, #0a0e0a 51%, #0a0809 100%);
+	background: -ms-linear-gradient(top, #595f60 0%, #383d3c 50%, #0a0e0a 51%, #0a0809 100%);
+	background: linear-gradient(to bottom, #595f60 0%, #383d3c 50%, #0a0e0a 51%, #0a0809 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595f60', endColorstr='#0a0809',GradientType=0 );
+}
+
+svg {
+	font: 10px Verdana;
+	/*shape-rendering: crispEdges;*/
+	width:100%;
+	height:100%;
+}
+
+rect {
+	fill: #ddd;
+	fill-opacity: 0.7; /*透明度*/
+	cursor: pointer;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #fff;
+}
+.axis text {
+	fill: #FFFFFF;
+}
+
+.rect_default {
+	fill: #36C1FA;
+}
+
+.rect_action {
+	fill: #F75858;
+}
+
+.brush .extent {
+	stroke: #f09f8c;
+	fill-opacity: .125;
+	shape-rendering: crispEdges;
+}
+.zoomobj {
+	margin: 0;
+	margin-left:50px;
+}
+
+.p_tooltip {
+	position: absolute;
+	width: 260px;
+	height: auto;
+	padding: 10px;
+	background-color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+	-moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+	pointer-events: none;
+	font: 14px Verdana;
+}
+
+.p_tooltip.hidden {
+	display: none;
+}
+.p_tooltip p {
+	margin: 0;
+	line-height: 18px;
+}
+.p_tooltip .title {
+	font-weight: bold;
+}
+
+.p_playctrldiv {
+	position: absolute;
+	height: 43px;
+	width: 43px;
+	background-image: url(../images/play-button.png);
+}
+
+.p_playctrldiv.pause {
+	background-image: url(../images/pause-button.png);
+}
+
+.p_playprogressdiv{
+}
+

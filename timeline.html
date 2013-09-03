@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Timeline</title>
+<link type="text/css" rel="stylesheet" href="css/button.css"/>
+<link type="text/css" rel="stylesheet" href="css/ha_timeline.css" />
+<body>
+	<div id="pardiv" style="width:800px; height:45px; margin-top: 100px;margin-left: 10px;"> </div>
+	<!--[if lte IE 8]><script src="./js/lib/r2d3.js" charset="utf-8"></script><![endif]-->
+	<!--[if gte IE 9]><!-->
+		
+	<script type="text/javascript" src="js/lib/d3.v3.js"></script>
+	<!--<![endif]-->
+	<script type="text/javascript" src="js/ha_timeline.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/lib/tools.js"></script>
+	<script type="text/javascript">
+		var o = new ha_timeline($("#pardiv"));
+		o.draw();
+	</script>
+</body>
